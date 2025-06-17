@@ -52,20 +52,30 @@
 
       <div class="flex items-center p-4 bg-red-500 text-white">b</div>
 
-      <section class="grid grid-cols-2 md:grid-cols-2 gap-4">
-        <div class="bg-white rounded-xl p-4 shadow">
+      <section class="grid grid-cols-3 md:grid-cols-3 gap-4">
+        <div class="col-span-2 bg-white rounded-xl p-4 shadow">
           <h3 class="font-semibold mb-2">Prévisions 7 jours</h3>
           <ul class="divide-y text-sm">
-            <li class="flex justify-between py-2 items-center"><span>Aujourd'hui</span> <span
-                class="flex items-center gap-1">☀️ Ensoleillé</span> <span>18° / 26°</span></li>
-            <li class="flex justify-between py-2 items-center"><span>Demain</span> <span
-                class="flex items-center gap-1">☁️ Nuageux</span> <span>15° / 23°</span></li>
-            <li class="flex justify-between py-2 items-center"><span>Vendredi</span> <span
-                class="flex items-center gap-1">🌧️ Pluie</span> <span>12° / 19°</span></li>
-            <li class="flex justify-between py-2 items-center"><span>Samedi</span> <span
-                class="flex items-center gap-1">☀️ Ensoleillé</span> <span>16° / 24°</span></li>
-            <li class="flex justify-between py-2 items-center"><span>Dimanche</span> <span
-                class="flex items-center gap-1">⛅ Part. nuageux</span> <span>14° / 21°</span></li>
+            <li class="flex justify-between py-6 items-center"><span class="font-bold">Aujourd'hui</span> <span
+                class="flex items-center gap-1"><i data-lucide="sun" class="text-yellow-400 w-5 h-5"></i>
+                Ensoleillé</span>
+              <span>18° <span class="font-bold">26°</span></span>
+            </li>
+            <li class="flex justify-between py-6 items-center"><span> Demain</span> <span
+                class="flex items-center gap-1"> <i data-lucide="cloud" class="text-grey-400 w-5 h-5"></i>
+                Nuageux</span>
+              <span>15° / 23°</span>
+            </li>
+            <li class="flex justify-between py-6 items-center"><span>Vendredi</span> <span
+                class="flex items-center gap-1"><i data-lucide="cloud" class="text-blue-400 w-5 h-5"></i> Pluie</span>
+              <span>12° / 19°</span>
+            </li>
+            <li class="flex justify-between py-6 items-center"><span>Samedi</span> <span
+                class="flex items-center gap-1"><i data-lucide="sun" class="text-yellow-400 w-5 h-5"></i>
+                Ensoleillé</span> <span>16° / 24°</span></li>
+            <li class="flex justify-between py-6 items-center"><span>Dimanche</span> <span
+                class="flex items-center gap-1"><i data-lucide="cloud" class="text-grey-400 w-5 h-5"></i> Part.
+                nuageux</span> <span>14° / 21°</span></li>
           </ul>
         </div>
 
@@ -76,13 +86,13 @@
             <div class="p-4 border-b border-gray-200">
               <h3 class="font-semibold mb-2">Température (24h)</h3>
               <div class="flex items-end justify-between h-32">
-                <div class="w-4 h-10 bg-blue-400 rounded"></div>
-                <div class="w-4 h-16 bg-blue-400 rounded"></div>
-                <div class="w-4 h-20 bg-orange-400 rounded"></div>
-                <div class="w-4 h-24 bg-orange-500 rounded"></div>
-                <div class="w-4 h-20 bg-orange-400 rounded"></div>
-                <div class="w-4 h-16 bg-blue-400 rounded"></div>
-                <div class="w-4 h-12 bg-blue-300 rounded"></div>
+                <div class="w-4 h-10 bg-gradient-to-t from-blue-300 to-blue-100 rounded"></div>
+                <div class="w-4 h-16 bg-gradient-to-t from-blue-300 to-blue-100 rounded"></div>
+                <div class="w-4 h-20 bg-gradient-to-t from-orange-400 to-orange-200 rounded"></div>
+                <div class="w-4 h-24 bg-gradient-to-t from-orange-400 to-orange-200 rounded"></div>
+                <div class="w-4 h-20 bg-gradient-to-t from-orange-400 to-orange-200 rounded"></div>
+                <div class="w-4 h-16 bg-gradient-to-t from-purple-400 to-purple-200 rounded"></div>
+                <div class="w-4 h-12 bg-gradient-to-t from-purple-400 to-purple-200 rounded"></div>
               </div>
               <div class="flex justify-between mt-2 text-xs text-gray-500">
                 <span>10h</span><span>12h</span><span>14h</span><span>16h</span><span>18h</span><span>20h</span><span>22h</span>
