@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-white flex justify-center">
+        <nav class="flex justify-between">
+            <div class="flex">
+                <a href="#" class="p-4 text-xl text-[#1565c0] font-bold">TechStore</a>
+            </div>
+            <div class="flex">
+                <a href="#" class="p-4 cursor-pointer"><i data-lucide="search"></i></a>
+                <a href="#" class="p-4 cursor-pointer relative">
+                    <i data-lucide="shopping-cart"></i>
+                    <span class="absolute top-2 right-1 bg-red-500 text-white rounded-[50%] w-4 h-4 flex justify-center items-center text-xs p-2">2</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="flex justify-center">
+        <div class="grid grid-rows-4">
+            <div class="flex items-center space-x-2 rtl:space-x-reverse mb-4 bg-blue-700">
+a
+            </div>
+            <div class="flex items-center space-x-2 rtl:space-x-reverse mb-4 bg-red-500">
+b
+            </div>
+            <div class="flex items-center space-x-2 rtl:space-x-reverse mb-4 bg-green-500">
+c
+            </div>
+            <div class="flex items-center space-x-2 rtl:space-x-reverse mb-4 border-gray-200">
+            d    
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
