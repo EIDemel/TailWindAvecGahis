@@ -35,10 +35,10 @@
         </div>
     </nav>
     <main class="flex justify-center p-4">
-        <div class="grid grid-rows-4 gap-4 w-full max-w-screen-xl">
+        <div class="flex flex-col gap-4 w-full max-w-screen-xl">
             <div class="flex items-center p-4 bg-blue-700 text-white">a</div>
-            <div class="flex items-center grid grid-cols-4 gap-2 mt-4 items-stretch">
-                <div class=" p-6 bg-white text-gray-700 rounded-lg  h-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+                <div class=" p-6 bg-white text-gray-700 rounded-lg  h-full shadow-sm">
                     <div class="max-w-sm overflow-hidden w-full ">
                         <div class="flex items-center rounded-lg justify-between">
                             <span class="text-gray-700">Indice UV</span>
@@ -56,7 +56,7 @@
                     </div>
 
                 </div>
-                <div class="flex  p-6 bg-white text-gray-700 rounded-lg  h-full">
+                <div class="flex  p-6 bg-white text-gray-700 rounded-lg  h-full shadow-sm">
 
                     <div class="max-w-sm overflow-hidden w-full ">
                         <div class="flex items-center rounded-lg justify-between">
@@ -75,7 +75,7 @@
                     </div>
 
                 </div>
-                <div class="flex p-6 bg-white text-gray-700 rounded-lg h-full">
+                <div class="flex p-6 bg-white text-gray-700 rounded-lg h-full shadow-sm ">
 
                     <div class="max-w-sm overflow-hidden w-full ">
                         <div class="flex items-center rounded-lg justify-between">
@@ -93,7 +93,7 @@
                     </div>
 
                 </div>
-                <div class="flex p-6 bg-white text-gray-700 rounded-lg h-full">
+                <div class="flex p-6 bg-white text-gray-700 rounded-lg h-full shadow-sm">
 
                     <div class="max-w-sm overflow-hidden w-full ">
                         <div class="flex items-center rounded-lg justify-between">
@@ -116,7 +116,22 @@
                 </div>
             </div>
             <div class="flex items-center p-4 bg-green-500 text-white">c</div>
-            <div class="flex items-center p-4 border border-gray-200">d</div>
+            <div class="flex items-center p-4 bg-white shadow-sm rounded-lg w-full overflow-hidden">
+                <div class="w-full">
+                    <div class="px-6 py-2 w-full">
+                        <div class="font-bold text-lg mb-2">Carte météo</div>
+                    </div>
+                    <div class="">
+                        <div
+                            class="rounded-lg bg-blue-600/20 hover:bg-blue-600/25 cursor-pointer flex flex-col items-center justify-center w-full mx-auto px-6 py-12 space-y-2"
+                        >
+                            <i data-lucide="map-pin" class="w-16 h-16 text-blue-600"></i>
+                            <span class="text-sm text-blue-600">Paris, France</span>
+                            <span class="text-base text-blue-600">Cliquez pour voir la carte interactive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
